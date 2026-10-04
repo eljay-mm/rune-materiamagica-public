@@ -11,8 +11,9 @@ connects you to the game — think of it as a web browser, but for text games.
 It runs in your terminal and is customized with little scripts written in Lua.
 
 This repo is my collection of those scripts. Together they turn the plain
-text game into something much friendlier: a live map, health bars, a quest
-tracker, a chat sidebar, and a bunch of autopilot helpers.
+text game into something much friendlier: a map of every room you explore,
+health bars, a quest tracker, a chat sidebar, and a bunch of autopilot
+helpers.
 
 Nothing here is required to play — it's all quality-of-life stuff I built up
 over time.
@@ -117,7 +118,7 @@ if you're having an AI help you write more scripts.
 - The room database (`mapper/map.db`, ~6.5 MB of mapped rooms) and the
   speedwalk list (`mapper/spdr.json`, 238 destinations) are committed to the
   repo, so a fresh clone starts with your map intact. Only live runtime files
-  (position/request/ack bridge files, server pid/log, `store.json`) are
+  — your position, `store.json`, and local server scratch files — are
   git-ignored.
 - Built against the Rune client API documented at
   [runemud.com](https://runemud.com). If Rune updates and something breaks,
