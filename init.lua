@@ -65,6 +65,10 @@ require("sense")
 -- Simple scheduled commands (e.g. twiddle every 5 min). See timers.lua.
 require("timers")
 
+-- Pull the latest config from the public repo without git (`/update`). See
+-- updater.lua.
+require("updater")
+
 -- Layout ---------------------------------------------------------------------
 -- The top-level UI tree lives here, with the config it describes.
 --

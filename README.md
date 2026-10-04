@@ -31,6 +31,13 @@ over time.
 4. **After editing any script**, just type `/reload` inside Rune — no restart
    needed.
 
+## Updating
+
+Type `/update` in the client to pull the latest version from the public repo;
+a one-line notice also appears on startup when a newer version exists.
+`/update check` just reports whether you're current. Your map and settings are
+never touched.
+
 ## What you get
 
 **The screen layout** (`init.lua`, `panes.lua`)
@@ -93,11 +100,6 @@ room header line as you walk in.
 **Anti-idle** (`timers.lua`)
 Sends `twiddle` every 5 minutes so you don't get logged out for idling.
 
-**AI authoring guide** (`RUNE_AI_GUIDE.md`)
-A distilled copy of Rune's scripting docs, written so an AI assistant can
-write correct Rune scripts without having to go read the website. Only useful
-if you're having an AI help you write more scripts.
-
 ## Commands cheat sheet
 
 | What | How |
@@ -123,4 +125,4 @@ if you're having an AI help you write more scripts.
   git-ignored.
 - Built against the Rune client API documented at
   [runemud.com](https://runemud.com). If Rune updates and something breaks,
-  `RUNE_AI_GUIDE.md` is the fastest path to fixing it.
+  that's the fastest path to fixing it.
