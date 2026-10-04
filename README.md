@@ -72,8 +72,9 @@ so they don't scroll away in the main output. Filter with `comms tell`,
 `ctrl+alt+pgup` / `ctrl+alt+pgdn`. History survives restarts.
 
 **Health bars** (`stats.lua`, `enemy.lua`)
-- Your `<1234hp 567sp 890st>` prompt becomes a color bar: green/yellow/red HP
-  bar, blue SP bar, yellow ST bar. `promptbar off` goes back to plain numbers.
+- The prompt bar is off by default; `promptbar on` turns your
+  `<1234hp 567sp 890st>` prompt into a color bar (green/yellow/red HP bar, blue
+  SP bar, yellow ST bar).
 - Monsters' wound descriptions ("has some very significant wounds…") become
   inline health bars with a percentage, so you can see exactly how hurt
   something is.

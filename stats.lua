@@ -76,12 +76,12 @@ local function prompt_line(hp, sp, st, extra)
 end
 
 -- Rewrite the prompt (<hp sp st>, with any text around it) into a bar line.
--- Splice into the raw line so any prefix/suffix keeps its original colors,
--- even when the prompt itself carries color codes. `promptbar off` leaves the
--- raw prompt untouched.
+-- Off by default (`promptbar on` enables it). Splice into the raw line so any
+-- prefix/suffix keeps its original colors, even when the prompt itself carries
+-- color codes.
 local function promptbar_on()
     local v = rune.store.get("stats.promptbar")
-    if v == nil then return true end    -- default: on
+    if v == nil then return false end   -- default: off
     return v == true
 end
 
