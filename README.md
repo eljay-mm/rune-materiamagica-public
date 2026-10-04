@@ -26,7 +26,7 @@ over time.
    - Linux / macOS: `~/.config/rune/`
    - Windows: `%APPDATA%\rune\`
 3. **Connect**:
-   - `rune mm` — connects to Materia Magica; type your character name at the
+   - `rune` — connects to Materia Magica; type your character name at the
      prompt.
 4. **After editing any script**, just type `/reload` inside Rune — no restart
    needed.

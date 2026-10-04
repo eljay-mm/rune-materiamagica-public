@@ -1,5 +1,13 @@
 -- Rune config for Materia Magica.
---   rune mm   -- connect to Materia Magica; type your character name
+--   rune   -- connects to Materia Magica; type your character name
+
+-- Connect on startup. rune.session survives /reload, so this fires once per
+-- client run, not on every reload. No world bookmark is needed, so a fresh
+-- clone connects straight away.
+if not rune.session.get("autoconnect") then
+    rune.session.set("autoconnect", "1")
+    rune.connect("materiamagica.com:4000")
+end
 
 -- Keep the last command in the input line, selected: Enter resends it,
 -- typing replaces it. Off by default.
