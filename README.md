@@ -63,6 +63,10 @@ Comes pre-loaded with a bunch of common destinations; add your own with
 `spdr add <shortcut> <room#> <description>`. Typing part of a name opens a
 searchable picker.
 
+**Roadsign picker** (`sign.lua`)
+Look at any roadsign in the world and a picker pops up listing everywhere it
+points; choose one and it runs you there over MM's roadsign network.
+
 **Sense autowalk** (`sense.lua`)
 When the game tells you "You sense that X may be located n, n, e…", it just
 walks there for you. `sense off` turns that off.
@@ -107,6 +111,7 @@ Sends `twiddle` every 5 minutes so you don't get logged out for idling.
 | Walk somewhere | `mapper goto <room#>` or `spdr <shortcut>` |
 | Where am I | `mapper where` |
 | Stop walking | `mapper stop` / `sense stop` |
+| Signpost travel | look at a sign; pick a destination |
 | Quest sidebar | automatic; `quests hide` to hide |
 | Chat filter | `comms tell` / `comms clan` / `comms all` … |
 | Hide sidebars | `/panes` |

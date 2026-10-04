@@ -69,6 +69,10 @@ require("timers")
 -- updater.lua.
 require("updater")
 
+-- Roadsigned destinations: reading a sign pops a picker that runs to the
+-- chosen place. See sign.lua.
+require("sign")
+
 -- Layout ---------------------------------------------------------------------
 -- The top-level UI tree lives here, with the config it describes.
 --
