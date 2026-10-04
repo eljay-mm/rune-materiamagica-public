@@ -13,6 +13,21 @@ M.position = nil            -- { uid = "...", area = "..." }
 M.dirty = false
 M.file = (rune.config_dir or ".") .. "/mapper/map.db"
 
+local IS_WINDOWS = (package and package.config and package.config:sub(1, 1) or "/") == "\\"
+
+-- Create the map's folder if it is missing, portably. The folder normally
+-- ships with the repo, so this only runs when a write to a missing folder
+-- fails.
+local function ensure_parent_dir(path)
+    local dir = path:match("^(.*)[/\\][^/\\]+$")
+    if not dir or dir == "" then return end
+    if IS_WINDOWS then
+        os.execute('mkdir "' .. dir .. '" 2>nul')
+    else
+        os.execute("mkdir -p '" .. dir .. "' 2>/dev/null")
+    end
+end
+
 local US, RS, GS = "\31", "\30", "\29"
 
 local SHORT_DIRS = { "n", "nw", "w", "sw", "s", "se", "e", "ne", "u", "d", "in", "out" }
@@ -118,6 +133,7 @@ function M.load()
     f:close()
     local n = 0
     for line in text:gmatch("[^\n]+") do
+        line = line:gsub("\r$", "")
         local r = decode_room(line)
         if r then M.rooms[r.uid] = r; n = n + 1 end
     end
@@ -126,15 +142,18 @@ function M.load()
 end
 
 function M.save()
-    local dir = M.file:match("^(.*)/[^/]+$")
-    if dir then os.execute("mkdir -p '" .. dir .. "'") end
     local lines = {}
     for _, r in pairs(M.rooms) do
         lines[#lines + 1] = encode_room(r)
     end
+    local text = table.concat(lines, "\n")
     local f = io.open(M.file, "w")
+    if not f then
+        ensure_parent_dir(M.file)
+        f = io.open(M.file, "w")
+    end
     if not f then return false, "cannot write " .. M.file end
-    f:write(table.concat(lines, "\n"))
+    f:write(text)
     f:close()
     M.dirty = false
     return true
