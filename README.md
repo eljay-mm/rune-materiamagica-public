@@ -24,12 +24,10 @@ over time.
 2. **Copy these files** into Rune's config folder:
    - Linux / macOS: `~/.config/rune/`
    - Windows: `%APPDATA%\rune\`
-3. **Put your character name in** — open `init.lua` and replace
-   `"YourCharacter"` with your actual character name.
-4. **Connect**:
-   - `rune login` — connects and types your character name for you
-   - `rune mm` — connects and lets you type any character name
-5. **After editing any script**, just type `/reload` inside Rune — no restart
+3. **Connect**:
+   - `rune mm` — connects to Materia Magica; type your character name at the
+     prompt.
+4. **After editing any script**, just type `/reload` inside Rune — no restart
    needed.
 
 ## What you get
