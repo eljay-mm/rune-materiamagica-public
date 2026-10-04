@@ -1,0 +1,632 @@
+{
+  "recipes": [
+    {
+      "recipe": "bagel",
+      "tool": "oven",
+      "ingredients": [
+        "some yeast powder",
+        "a cup of water",
+        "a bag of baking flour",
+        "a chicken egg",
+        "a bottle of olive oil",
+        "some gooey honey comb",
+        "a small salt crystal",
+        "a sack of brown sugar"
+      ]
+    },
+    {
+      "recipe": "bagel-chips",
+      "tool": "oven",
+      "ingredients": [
+        "a bagel",
+        "a small salt crystal",
+        "a bottle of olive oil"
+      ]
+    },
+    {
+      "recipe": "baking-soda",
+      "tool": "none",
+      "ingredients": [
+        "a wineskin of gomutra ghanvati"
+      ]
+    },
+    {
+      "recipe": "borracho",
+      "tool": "cauldron",
+      "ingredients": [
+        "a savo bean",
+        "a fresh, raw onion",
+        "a fresh, juicy red tomato",
+        "a tropical citrus fruit",
+        "a bowl of rice",
+        "a red pepper",
+        "a tiny bundle of cilantro",
+        "a bottle of lager",
+        "a small salt crystal",
+        "a clove of elephant garlic"
+      ]
+    },
+    {
+      "recipe": "breakfast-bagel",
+      "tool": "griddle",
+      "ingredients": [
+        "a bagel",
+        "a stick of freshly-churned minotaur butter",
+        "a hunk of swiss cheese",
+        "a chicken egg",
+        "a cold glass of milk",
+        "a vorma seed",
+        "some crushed pepper seasoning"
+      ]
+    },
+    {
+      "recipe": "breakfast-omelette",
+      "tool": "griddle",
+      "ingredients": [
+        "a bottle of olive oil",
+        "a large squishy mushroom",
+        "a large spinach leaf",
+        "a chicken egg",
+        "a tiny bundle of cilantro",
+        "a grainy block of feta cheese",
+        "an avocado",
+        "a croissant"
+      ]
+    },
+    {
+      "recipe": "breakfast-taco",
+      "tool": "griddle",
+      "ingredients": [
+        "a bag of corn tortillas",
+        "a raw brown potato",
+        "a chicken egg",
+        "a ramekin of salsa roja"
+      ]
+    },
+    {
+      "recipe": "brownies",
+      "tool": "oven",
+      "ingredients": [
+        "a chicken egg",
+        "a small salt crystal",
+        "a bag of sugar",
+        "a stick of freshly-churned minotaur butter",
+        "a few pecans",
+        "a bag of baking flour",
+        "a chunk of chocolate",
+        "a tiny, split vanilla bean pod"
+      ]
+    },
+    {
+      "recipe": "buche",
+      "tool": "oven",
+      "ingredients": [
+        "a bag of baking flour",
+        "a box of baking soda",
+        "a small salt crystal",
+        "a chunk of chocolate",
+        "a tiny, split vanilla bean pod",
+        "some buche syrup",
+        "some buche cream",
+        "a bag of sugar",
+        "a chicken egg"
+      ]
+    },
+    {
+      "recipe": "buche-cream",
+      "tool": "cauldron",
+      "ingredients": [
+        "a cup of water",
+        "a chunk of chocolate",
+        "a bag of sugar",
+        "a bottle of dairy cream",
+        "a bag of espresso beans",
+        "a stick of freshly-churned minotaur butter"
+      ]
+    },
+    {
+      "recipe": "buche-syrup",
+      "tool": "griddle",
+      "ingredients": [
+        "a cup of water",
+        "a bag of sugar",
+        "a faerie rum blend"
+      ]
+    },
+    {
+      "recipe": "carrot-cake",
+      "tool": "oven",
+      "ingredients": [
+        "a bag of baking flour",
+        "a box of baking soda",
+        "a small salt crystal",
+        "a tiny vial of cinnamon powder",
+        "a bag of sugar",
+        "a bottle of peanut oil",
+        "a chicken egg",
+        "a sweet pineapple",
+        "a few pecans",
+        "a piping tube of cream cheese frosting",
+        "a large carrot"
+      ]
+    },
+    {
+      "recipe": "cheese-souffle",
+      "tool": "oven",
+      "ingredients": [
+        "a stick of freshly-churned minotaur butter",
+        "a hunk of swiss cheese",
+        "a chicken egg",
+        "a cold glass of milk",
+        "a bag of baking flour"
+      ]
+    },
+    {
+      "recipe": "chile-relleno",
+      "tool": "cauldron",
+      "ingredients": [
+        "a red pepper",
+        "a hunk of swiss cheese",
+        "a small salt crystal",
+        "a bag of baking flour",
+        "a chicken egg",
+        "a bottle of olive oil",
+        "a ramekin of salsa roja"
+      ]
+    },
+    {
+      "recipe": "chile-relleno-burrito",
+      "tool": "griddle",
+      "ingredients": [
+        "a savo bean",
+        "a bowl of rice",
+        "a chile relleno",
+        "a fresh, raw onion",
+        "a fresh, juicy red tomato",
+        "spicy seasoning",
+        "a tiny bundle of cilantro",
+        "a bag of corn tortillas"
+      ]
+    },
+    {
+      "recipe": "chocolate-cake",
+      "tool": "oven",
+      "ingredients": [
+        "a bag of baking flour",
+        "a stick of freshly-churned minotaur butter",
+        "a box of baking soda",
+        "a small salt crystal",
+        "a chunk of chocolate",
+        "a tiny, split vanilla bean pod",
+        "a cup of water",
+        "a bag of sugar",
+        "a chicken egg",
+        "a carton of buttermilk"
+      ]
+    },
+    {
+      "recipe": "corn-tortillas",
+      "tool": "griddle",
+      "ingredients": [
+        "a cup of water",
+        "a small salt crystal",
+        "a brick of masa"
+      ]
+    },
+    {
+      "recipe": "cream-cheese",
+      "tool": "icebox",
+      "ingredients": [
+        "a ripe lemon",
+        "a small salt crystal",
+        "a cold glass of milk"
+      ]
+    },
+    {
+      "recipe": "cream-cheese-frosting",
+      "tool": "icebox",
+      "ingredients": [
+        "a brick of cream cheese",
+        "a stick of freshly-churned minotaur butter",
+        "a bag of powdered sugar",
+        "a tiny, split vanilla bean pod"
+      ]
+    },
+    {
+      "recipe": "enchilada-sauce",
+      "tool": "mixing-bowl",
+      "ingredients": [
+        "a bag of baking flour",
+        "a medium sized jalapeno",
+        "a hunk of swiss cheese",
+        "a tropical citrus fruit",
+        "a dollop of sour cream",
+        "a stick of freshly-churned minotaur butter"
+      ]
+    },
+    {
+      "recipe": "fudge-sauce",
+      "tool": "mixing-bowl",
+      "ingredients": [
+        "a tiny, split vanilla bean pod",
+        "a stick of freshly-churned minotaur butter",
+        "a cold glass of milk",
+        "a chunk of chocolate",
+        "a bag of sugar"
+      ]
+    },
+    {
+      "recipe": "garden-salad",
+      "tool": "mixing bowl",
+      "ingredients": [
+        "an avocado",
+        "a heart of romaine lettuce",
+        "an ear of purple corn",
+        "a savo bean",
+        "a flanvo bean",
+        "a loaf of barley bread",
+        "a large carrot"
+      ]
+    },
+    {
+      "recipe": "gingerbread",
+      "tool": "oven",
+      "ingredients": [
+        "a cup of water",
+        "a bag of baking flour",
+        "a box of baking soda",
+        "a small salt crystal",
+        "a tiny vial of cinnamon powder",
+        "a sack of brown sugar",
+        "a bag of sugar",
+        "a stick of freshly-churned minotaur butter",
+        "a chicken egg",
+        "some cubes of ginger root",
+        "five-spice"
+      ]
+    },
+    {
+      "recipe": "hot-fudge-sundae",
+      "tool": "none",
+      "ingredients": [
+        "a scoop of vanilla",
+        "a twirly nut",
+        "a dollop of whipped cream",
+        "a jar of hot fudge sauce"
+      ]
+    },
+    {
+      "recipe": "huevos-rancheros",
+      "tool": "griddle",
+      "ingredients": [
+        "a bottle of olive oil",
+        "a ramekin of salsa roja",
+        "a chicken egg",
+        "a savo bean",
+        "a gunpowder peppercorn",
+        "a bag of corn tortillas",
+        "a tropical citrus fruit",
+        "an aromatic bean pod",
+        "a grainy block of feta cheese"
+      ]
+    },
+    {
+      "recipe": "hummus",
+      "tool": "none",
+      "ingredients": [
+        "a flanvo bean",
+        "a clove of elephant garlic",
+        "a ripe lemon",
+        "a vorma seed",
+        "a small salt crystal",
+        "a cup of water"
+      ]
+    },
+    {
+      "recipe": "light-breakfast",
+      "tool": "griddle",
+      "ingredients": [
+        "a sweet pineapple",
+        "a green, stripy watermelon",
+        "a sliced banana",
+        "a bucket of oats",
+        "some yogurt"
+      ]
+    },
+    {
+      "recipe": "masa",
+      "tool": "none",
+      "ingredients": [
+        "an ear of purple corn",
+        "a tropical citrus fruit"
+      ]
+    },
+    {
+      "recipe": "mirepoix",
+      "tool": "griddle",
+      "ingredients": [
+        "a small salt crystal",
+        "a bottle of olive oil",
+        "a gunpowder peppercorn",
+        "a cup of water",
+        "a raw brown potato",
+        "a fresh, raw onion",
+        "a stick of freshly-churned minotaur butter",
+        "a large carrot"
+      ]
+    },
+    {
+      "recipe": "oatmeal-chocolate-chip-cookies",
+      "tool": "oven",
+      "ingredients": [
+        "a bucket of oats",
+        "a chicken egg",
+        "a sack of brown sugar",
+        "a box of baking soda",
+        "a small salt crystal",
+        "a stick of freshly-churned minotaur butter",
+        "a few pecans",
+        "a bag of baking flour",
+        "a chunk of chocolate",
+        "a tiny, split vanilla bean pod"
+      ]
+    },
+    {
+      "recipe": "peanut-butter-cookies",
+      "tool": "oven",
+      "ingredients": [
+        "a chicken egg",
+        "a sack of brown sugar",
+        "a box of baking soda",
+        "a small salt crystal",
+        "a bag of sugar",
+        "a stick of freshly-churned minotaur butter",
+        "some gooey honey comb",
+        "a bag of baking flour",
+        "a twirly nut"
+      ]
+    },
+    {
+      "recipe": "pico-de-gallo",
+      "tool": "mixing-bowl",
+      "ingredients": [
+        "a tropical citrus fruit",
+        "a fresh, juicy red tomato",
+        "a small salt crystal",
+        "a tiny bundle of cilantro",
+        "a fresh, raw onion"
+      ]
+    },
+    {
+      "recipe": "plating",
+      "tool": "mixing-bowl",
+      "ingredients": [
+        "a hunk of jarlsberg",
+        "a hunk of swiss cheese"
+      ]
+    },
+    {
+      "recipe": "popcorn",
+      "tool": "icebox",
+      "ingredients": [
+        "a stick of freshly-churned minotaur butter",
+        "a small salt crystal",
+        "some purple popcorn"
+      ]
+    },
+    {
+      "recipe": "raised-waffles",
+      "tool": "griddle",
+      "ingredients": [
+        "yeast starter",
+        "a cold glass of milk",
+        "a bottle of peanut oil",
+        "a sack of brown sugar",
+        "a bag of baking flour",
+        "a small salt crystal",
+        "a chicken egg",
+        "a box of baking soda",
+        "a stick of freshly-churned minotaur butter"
+      ]
+    },
+    {
+      "recipe": "salsa-roja",
+      "tool": "mixing-bowl",
+      "ingredients": [
+        "a fresh, juicy red tomato",
+        "a small salt crystal",
+        "a fresh, raw onion",
+        "a tropical citrus fruit",
+        "a medium sized jalapeno",
+        "a bottle of olive oil",
+        "a clove of elephant garlic",
+        "a tiny bundle of cilantro",
+        "a red pepper"
+      ]
+    },
+    {
+      "recipe": "savory",
+      "tool": "oven",
+      "ingredients": [
+        "a bottle of dairy cream",
+        "a large squishy mushroom",
+        "a large spinach leaf",
+        "a clove of elephant garlic",
+        "a wedge of parmesan",
+        "a tiny bundle of cilantro",
+        "a bottle of white wine",
+        "a chilled pastry crust",
+        "a stick of freshly-churned minotaur butter"
+      ]
+    },
+    {
+      "recipe": "scorpion-soup",
+      "tool": "cauldron",
+      "ingredients": [
+        "a carton of soup stock",
+        "a hunk of scorpion meat"
+      ]
+    },
+    {
+      "recipe": "sour-cream",
+      "tool": "mixer",
+      "ingredients": [
+        "a ripe lemon",
+        "a cold glass of milk"
+      ]
+    },
+    {
+      "recipe": "sourdough-pancakes",
+      "tool": "griddle",
+      "ingredients": [
+        "yeast starter",
+        "a bottle of peanut oil",
+        "a small salt crystal",
+        "a chicken egg",
+        "a bag of sugar"
+      ]
+    },
+    {
+      "recipe": "spaghetti-and-pesto",
+      "tool": "mixing bowl",
+      "ingredients": [
+        "a bottle of pesto",
+        "a plate of spaghetti"
+      ]
+    },
+    {
+      "recipe": "spinach-enchiladas",
+      "tool": "none",
+      "ingredients": [
+        "a large spinach leaf",
+        "a small salt crystal",
+        "a bottle of olive oil",
+        "a stick of freshly-churned minotaur butter",
+        "a fresh, raw onion",
+        "a clove of elephant garlic",
+        "a bag of corn tortillas",
+        "a jar of enchilada sauce"
+      ]
+    },
+    {
+      "recipe": "sprutter-spritz",
+      "tool": "none",
+      "ingredients": [
+        "a chicken egg",
+        "a bag of sugar",
+        "a stick of freshly-churned minotaur butter",
+        "a bag of baking flour",
+        "a twirly nut"
+      ]
+    },
+    {
+      "recipe": "steak-and-potatoes",
+      "tool": "griddle",
+      "ingredients": [
+        "a raw sirloin steak",
+        "a raw yellow potato"
+      ]
+    },
+    {
+      "recipe": "strawberry-shortcake",
+      "tool": "oven",
+      "ingredients": [
+        "a cup of water",
+        "a bag of baking flour",
+        "a box of baking soda",
+        "a small salt crystal",
+        "a bag of sugar",
+        "a chicken egg",
+        "a ripe lemon",
+        "a dollop of whipped cream",
+        "a basket of strawberries"
+      ]
+    },
+    {
+      "recipe": "tapenade",
+      "tool": "mixing-bowl",
+      "ingredients": [
+        "a few black olives",
+        "a bottle of olive oil",
+        "a ripe lemon",
+        "a clove of elephant garlic",
+        "a tiny bundle of cilantro"
+      ]
+    },
+    {
+      "recipe": "tiramisu",
+      "tool": "none",
+      "ingredients": [
+        "a brick of cream cheese",
+        "a dollop of whipped cream",
+        "a faerie rum blend",
+        "a sugar cookie",
+        "a chunk of chocolate",
+        "a bag of espresso beans"
+      ]
+    },
+    {
+      "recipe": "toffee",
+      "tool": "griddle",
+      "ingredients": [
+        "a cup of water",
+        "a bag of sugar",
+        "a stick of freshly-churned minotaur butter",
+        "a few pecans",
+        "a chunk of chocolate"
+      ]
+    },
+    {
+      "recipe": "tostada",
+      "tool": "griddle",
+      "ingredients": [
+        "a savo bean",
+        "an avocado",
+        "a bowl of rice",
+        "a bag of corn tortillas",
+        "a dollop of sour cream",
+        "a few black olives",
+        "a fresh, raw onion",
+        "a fresh, juicy red tomato",
+        "a tiny bundle of cilantro"
+      ]
+    },
+    {
+      "recipe": "whipped-cream",
+      "tool": "mixing-bowl",
+      "ingredients": [
+        "a bottle of dairy cream"
+      ]
+    },
+    {
+      "recipe": "winterroot-soup",
+      "tool": "cauldron",
+      "ingredients": [
+        "a tub of mirepoix",
+        "a hardy edible root",
+        "a tender turnip",
+        "a firm, red beet",
+        "a wonta tuber",
+        "a ripe pumpkin",
+        "a dollop of sour cream"
+      ]
+    },
+    {
+      "recipe": "yeast-starter",
+      "tool": "mixer",
+      "ingredients": [
+        "some yeast powder",
+        "a cup of water",
+        "a bag of baking flour"
+      ]
+    },
+    {
+      "recipe": "yogurt",
+      "tool": "mixing-bowl",
+      "ingredients": [
+        "some yeast powder",
+        "a cold glass of milk"
+      ]
+    }
+  ]
+}

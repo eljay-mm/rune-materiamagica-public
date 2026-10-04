@@ -1,0 +1,7 @@
+# Runtime / personal state
+position.txt
+store.json
+
+# Python
+__pycache__/
+*.pyc
