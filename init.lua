@@ -63,7 +63,7 @@ require("autopouch")
 require("sense")
 
 -- Simple scheduled commands (e.g. twiddle every 5 min). See timers.lua.
-require("timers")
+-- require("timers")
 
 -- Pull the latest config from the public repo without git (`/update`). See
 -- updater.lua.
@@ -84,8 +84,10 @@ require("sign")
 -- comms/quests sidebar. Panes have no runtime title setter, so quests/comms
 -- re-declare the layout when their title changes; hidden pane states are
 -- preserved across that.
-function rune_build_layout(quests_title, comms_title)
+function rune_build_layout(quests_title, comms_title, map_title)
     comms_title = comms_title or rune.comms_title or "Comms"
+    map_title = map_title or "ASCII Map"
+    
     rune.ui.layout({
         type = "column",
         children = {
@@ -94,11 +96,18 @@ function rune_build_layout(quests_title, comms_title)
                 { type = "pane", name = "output", size = "1fr",
                   border = "none" },
                 { type = "column", size = "38%", children = {
+                    -- --> Eljay's ASCII Map Integration
+                    { type = "pane", name = "y_ascii_map", size = 13,
+                      border = "full", title = map_title,
+                      hidden = rune.pane.is_hidden("y_ascii_map") or false },
+                    -- explicit 1-row gap so the panes read as separate boxes
+                    { type = "pane", name = "pad_c", size = 1, border = "none",
+                      hidden = rune.pane.is_hidden("y_ascii_map") or false },
                     { type = "pane", name = "comms", size = "50%",
                       border = "full", title = comms_title,
                       hidden = rune.pane.is_hidden("comms") or false },
                     -- explicit 1-row gap so the panes read as separate boxes
-                    { type = "pane", name = "pad_gap", size = 1, border = "none" },
+                    { type = "pane", name = "pad_q", size = 1, border = "none" },
                     { type = "pane", name = "quests", size = "1fr",
                       border = "full", title = quests_title or "Quests",
                       hidden = rune.pane.is_hidden("quests") or false },
@@ -113,3 +122,5 @@ function rune_build_layout(quests_title, comms_title)
 end
 
 rune_build_layout(rune.store.get("quest_title"))
+
+require("eljayPlugins/initEljay")
