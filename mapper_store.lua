@@ -177,7 +177,10 @@ function M.upsert(info)
     r.uid = uid
     r.name = info.name or r.name
     r.area = info.area or info.zone or r.area
-    r.exits = parse_exits(info.exits)
+    local new_exits = parse_exits(info.exits)
+    if next(new_exits) then
+        r.exits = new_exits
+    end
     if info.flags and info.flags ~= "_empty" then
         r.flags = info.flags
     end
