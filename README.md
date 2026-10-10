@@ -77,10 +77,11 @@ countdown timers. Viewing a quest in-game (`quest status <number>`) pulls up
 its details automatically.
 
 **Chat sidebar** (`comms.lua`)
-Collects tells, clan chat, PK talk channels, relay, formation tells, and
-alliance chat into one pane so they don't scroll away in the main output.
-Filter with `comms tell`, `comms clan`, `comms talk`, `comms relay`,
-`comms form`, `comms ally`, or `comms all`. Scroll it with `ctrl+alt+pgup` /
+Collects tells, clan chat, PK talk channels, relay, formation tells,
+alliance chat, novice clan, and auction into one pane so they don't
+scroll away in the main output. Filter with `comms tell`, `comms clan`,
+`comms talk`, `comms relay`, `comms form`, `comms ally`, `comms novice`,
+`comms auction`, or `comms all`. Scroll it with `ctrl+alt+pgup` /
 `ctrl+alt+pgdn`. History survives restarts and is keyed per character.
 `comms debug` and `comms name` for troubleshooting.
 
