@@ -17,8 +17,8 @@ local H = require("helpstyle")
 rune.pane.create("comms")
 
 local CAP = 500
-local FILTERS = { all = true, tell = true, clan = true, talk = true, relay = true, form = true, ally = true }
-local TITLES = { all = "all", tell = "tells", clan = "clan", talk = "talk", relay = "relay", form = "form", ally = "ally" }
+local FILTERS = { all = true, tell = true, clan = true, talk = true, relay = true, form = true, ally = true, novice = true, auction = true }
+local TITLES = { all = "all", tell = "tells", clan = "clan", talk = "talk", relay = "relay", form = "form", ally = "ally", novice = "novice", auction = "auction" }
 
 -- GMCP packages that might carry the character name, and the fields to try.
 local PACKAGES = { "Char.Info", "Char.Base", "Char.Status", "Char.Name" }
@@ -188,7 +188,7 @@ end, { name = "comms-tell-out" })
 -- Formation tells:
 --   in:  <player> tells the formation '<message>'
 --   out: You tell the formation '<message>'
-rune.trigger.regex("^([^\\s]+) tells the formation '(.+)'$", function(m, ctx)
+rune.trigger.regex("^(.-) tells the formation '(.+)'$", function(m, ctx)
     return mirror(ctx.line:raw(), "form")
 end, { name = "comms-form-in" })
 
@@ -207,6 +207,25 @@ rune.trigger.regex("^\\[(\\d+)\\] alliance members heard you say, '(.+)'$", func
     return mirror(ctx.line:raw(), "ally")
 end, { name = "comms-ally-out" })
 
+-- Auction channel.
+rune.trigger.contains("AUCTION:", function(_, ctx)
+    return mirror(ctx.line:raw(), "auction")
+end, { name = "comms-auction" })
+
+-- Novice clan (distinct format from standard [CLAN]):
+--   in:  [CLAN <clan name>] <player>: '<msg>'
+--   out: [<num>] <num> clan members heard you say, '<msg>'
+rune.trigger.regex("^\\[CLAN ([^\\]]+)\\] ([^:]+): '(.+)'$", function(m, ctx)
+    return mirror(ctx.line:raw(), "novice")
+end, { name = "comms-novice-in" })
+
+rune.trigger.regex("^\\[(\\d+)\\] (.+) clan members heard you say, '(.+)'$", function(m, ctx)
+    return mirror(ctx.line:raw(), "novice")
+end, { name = "comms-novice-out" })
+
+-- Standard clan:
+--   in:  [CLAN] <player>: '<msg>'
+--   out: [<num>] clan members heard you say, '<msg>'
 rune.trigger.regex("^\\[CLAN\\] ([^\\s]+): '(.+)'$", function(m, ctx)
     return mirror(ctx.line:raw(), "clan")
 end, { name = "comms-clan-in" })
@@ -274,7 +293,7 @@ rune.bind("ctrl+alt+pgup",   comms_up,   { group = "comms" })
 rune.bind("ctrl+alt+pgdown", comms_down, { group = "comms" })
 
 rune.alias.regex(
-    "^comms[ ]+(show|hide|toggle|clear|top|bottom|all|tell|clan|talk|relay|form|ally|debug|name)$",
+    "^comms[ ]+(show|hide|toggle|clear|top|bottom|all|tell|clan|talk|relay|form|ally|novice|auction|debug|name)$",
     function(m)
         local cmd = m[1]
         if cmd == "clear" then
@@ -301,15 +320,15 @@ rune.alias.regex(
     end, { name = "comms-toggle" })
 
 rune.alias.regex("^comms([ ]+help)?$", function()
-    rune.echo(H.title("comms pane (tells, clan, talk, relay, formation, alliance)"))
+    rune.echo(H.title("comms pane (tells, clan, talk, relay, formation, alliance, novice, auction)"))
     rune.echo(H.line("comms show | hide | toggle", "show/hide the comms pane"))
-    rune.echo(H.line("comms all | tell | clan | talk | relay | form | ally", "show only that channel (all are buffered)"))
+    rune.echo(H.line("comms all | tell | clan | talk | relay | form | ally | novice | auction", "show only that channel (all are buffered)"))
     rune.echo(H.line("comms clear", "clear the buffer and the pane"))
     rune.echo(H.line("comms top | bottom", "jump to buffer extremes"))
     rune.echo(H.line("comms name | debug", "show GMCP character name / dump GMCP name packages"))
     rune.echo(H.line("ctrl+alt+pgup | ctrl+alt+pgdown", "scroll comms pane (5 lines)", 34))
     rune.echo("")
-    rune.echo(H.foot("Lines matching the tell/clan/talk/relay/formation/alliance patterns are written to the pane AND pass through the main output (never gagged)."))
+    rune.echo(H.foot("Lines matching tell/clan/talk/relay/formation/alliance/novice/auction patterns are written to the pane AND pass through the main output (never gagged)."))
 end, { name = "comms-help" })
 
 -- Persistence: replay the buffer once the UI is up, and save it
