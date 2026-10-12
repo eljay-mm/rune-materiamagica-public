@@ -188,7 +188,7 @@ end, { name = "comms-tell-out" })
 -- Formation tells:
 --   in:  <player> tells the formation '<message>'
 --   out: You tell the formation '<message>'
-rune.trigger.regex("^(.-) tells the formation '(.+)'$", function(m, ctx)
+rune.trigger.contains(" tells the formation '", function(_, ctx)
     return mirror(ctx.line:raw(), "form")
 end, { name = "comms-form-in" })
 
